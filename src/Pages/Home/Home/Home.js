@@ -1,9 +1,11 @@
 import React from 'react';
+import SocialLinks from '../SocialLinks/SocialLinks';
 
 const Home = () => {
   return (
     <div>
-      <h2>This is home</h2>
+      This is home
+      <SocialLinks></SocialLinks>
     </div>
   );
 };
