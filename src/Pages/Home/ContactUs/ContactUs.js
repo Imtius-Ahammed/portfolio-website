@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <div data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000">
+    data-aos-duration="1000" className='pt-8'>
       
       <JotformEmbed  src="https://form.jotform.com/223430265632449" />
     </div>
