@@ -31,7 +31,7 @@ const Navbar = () => {
   </div>
   
 </div>
-<div><h1 className='text-3xl font-bold text-red-500'>Portfolio</h1></div>
+<div><h1 className='text-3xl font-bold text-orange-500 pl-3'>MD Imtius Ahammed</h1></div>
 </div>
   </div>
   <div className="navbar-center hidden lg:flex">
