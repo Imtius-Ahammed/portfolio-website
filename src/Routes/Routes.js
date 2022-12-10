@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 
 import Main from "../layout/Main";
+import AboutMe from "../Pages/Home/AboutMe/AboutMe";
 import Banner from "../Pages/Home/Banner/Banner";
 import ContactUs from "../Pages/Home/ContactUs/ContactUs";
 import Experience from "../Pages/Home/Experience/Experience";
@@ -33,6 +34,11 @@ export const router = createBrowserRouter([
       {
         path:'/skills',
         element:<Experience></Experience>
+      },
+      
+      {
+        path:'/about',
+        element:<AboutMe></AboutMe>
       }
       
 

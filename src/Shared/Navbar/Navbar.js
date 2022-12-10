@@ -17,7 +17,11 @@ const Navbar = () => {
           
         
         </li>
-        <li><Link to='/contact'>Contact Us</Link></li>
+        <li>
+        <Link to='/skills'>Skills</Link>
+        <Link to='/projects'>Projects</Link>
+        <Link to='/about'>AboutME</Link>
+          <Link to='/contact'>Contact Us</Link></li>
       </ul>
     </div>
     <div className='flex justify-center items-center p-2'>
@@ -34,6 +38,9 @@ const Navbar = () => {
     <ul className="menu menu-horizontal p-0">
       <li><Link to='/'>Home</Link></li>
       <li tabIndex={0}>
+      <Link to='/skills'>Skills</Link>
+        <Link to='/projects'>Projects</Link>
+        <Link to='/about'>AboutME</Link>
         <Link to='/contact'>
           Contact US
           
@@ -43,9 +50,7 @@ const Navbar = () => {
       
     </ul>
   </div>
-  <div className="navbar-end">
-    <Link className="btn">Get started</Link>
-  </div>
+  
 </div>
     </div>
   );
