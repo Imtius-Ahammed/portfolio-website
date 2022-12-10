@@ -5,10 +5,6 @@ const ContactUs = () => {
   return (
     <div>
       
-
-      <h1>Contact Us</h1>
-
-     
       <JotformEmbed  src="https://form.jotform.com/223430265632449" />
     </div>
   );
