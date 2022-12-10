@@ -2,7 +2,11 @@ import { createBrowserRouter } from "react-router-dom";
 
 
 import Main from "../layout/Main";
+import Banner from "../Pages/Home/Banner/Banner";
+import ContactUs from "../Pages/Home/ContactUs/ContactUs";
+import Experience from "../Pages/Home/Experience/Experience";
 import Home from "../Pages/Home/Home/Home";
+import ProjectSS from "../Pages/Home/ProjectSS/ProjectSS";
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +16,26 @@ export const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>
+      },
+      {
+        path:'/contact',
+        element:<ContactUs></ContactUs>
+      },
+      {
+        path:'/projects',
+        element:<ProjectSS></ProjectSS>
+      },
+      {
+        path:'/banner',
+        element:<Banner></Banner>
+
+      },
+      {
+        path:'/skills',
+        element:<Experience></Experience>
       }
+      
+
     ]
   }
 ]);

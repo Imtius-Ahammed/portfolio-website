@@ -1,4 +1,6 @@
 import React from 'react';
+import mybg from '../../../assets/my-bg.png'
+import { motion } from "framer-motion";
 
 import { Typewriter } from 'react-simple-typewriter';
 
@@ -14,16 +16,21 @@ const Banner = () => {
   return (
     <div className="hero min-h-screen" style={{ backgroundImage: `url("https://wallpaperset.com/w/full/9/e/6/335193.jpg")` }}>
     <div className="hero-overlay bg-opacity-60"></div>
-    <div className="hero min-h-screen ">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <img  src="https://placeimg.com/260/400/arch" className="max-w-sm rounded-lg animate-bounce  shadow-2xl" alt='' />
+    
+  <div   className="hero-content flex-col lg:flex-row-reverse ">
+  <motion.h1
+              
+                whileHover={{ scale: 1.2 }}
+            >
+    <img  src={mybg} className="max-w-sm rounded-lg   shadow-2xl" alt='' />
+    </motion.h1>
     <div>
     <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
-        Life is simple{' '}
-        <span className='text-3xl text-red-600 font-bold ' >
+        <h1 className='outline text-3xl font-bold text-orange-300 mb-4'>Welcome to My Portfolio</h1>{' '}
+        <span className='text-5xl text-green-400 font-bold ' >
           
           <Typewriter
-            words={['Hi I am MD Imtius Ahammed', 'The Front End Developer']}
+            words={['Hi I am MD Imtius Ahammed', 'Jr. Front End Web Developer']}
             loop={5}
             cursor
             cursorStyle='_'
@@ -35,11 +42,15 @@ const Banner = () => {
           />
         </span>
       </h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p className="py-6 text-md text-yellow-200">Junior Front End Web Developer Enthusiastic focused and motivated,
+seeking an opportunity to contribute in institutions by implementing
+concepts, knowledge, and methodologies learn thereby adding value for
+the organization.. Excellent communication skills- both oral and written.
+Flexible and adaptable to demands of changing work environments.</p>
       <a href='https://drive.google.com/file/d/1KfGJNi3OAQjoqnmfYEajbKbqEiosGMap/view' target="_blank"><button className="btn btn-primary">My Resume</button></a>
     </div>
   </div>
-</div>
+
   </div>
   );
 };

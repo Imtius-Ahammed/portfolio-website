@@ -1,5 +1,5 @@
 import React from 'react';
-import {  FaGithub, FaLinkedin } from 'react-icons/fa';
+import {  FaDatabase, FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const SocialLinks = () => {
   const links = [
@@ -10,7 +10,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkedin.com",
+      href: "www.linkedin.com/in/md-imtius-ahammed-b10a0920a",
       style: "rounded-tr-md",
     },
     {
@@ -26,21 +26,21 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Mail 
+          Facebook <FaFacebook size={30}/>
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "https://www.facebook.com/profile.php?id=100008503034394",
     },
     {
       id: 4,
       child: (
         <>
-          Resume 
+          Resume <FaDatabase size={30}/>
         </>
       ),
-      href: "/resume.pdf",
+      href: "https://drive.google.com/file/d/1KfGJNi3OAQjoqnmfYEajbKbqEiosGMap/view?usp=sharing",
       style: "rounded-br-md",
-      download: true,
+      
     },
   ];
 
