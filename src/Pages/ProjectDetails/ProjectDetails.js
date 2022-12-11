@@ -9,7 +9,7 @@ const ProjectDetails = () => {
   
 
   return (
-    <div>
+    <div >
      {
       singleProjects.map(project=><ProjectDetailsCard key={project.id} project={project}></ProjectDetailsCard>)
      }

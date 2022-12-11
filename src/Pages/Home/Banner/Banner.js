@@ -48,6 +48,7 @@ concepts, knowledge, and methodologies learn thereby adding value for
 the organization.. Excellent communication skills- both oral and written.
 Flexible and adaptable to demands of changing work environments.</p>
       <a href='https://drive.google.com/file/d/1KfGJNi3OAQjoqnmfYEajbKbqEiosGMap/view' target="_blank"><button className="btn btn-primary">My Resume</button></a>
+      <a href="Final-Resume.pdf" download="Final-Resume.pdf"><button  className='btn ml-3 btn-info'>Download</button></a>
     </div>
   </div>
 
