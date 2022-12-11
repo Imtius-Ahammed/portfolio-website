@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from '../AboutMe/AboutMe';
 import Banner from '../Banner/Banner';
+import Blogs from '../Blogs/Blogs';
 import ContactUs from '../ContactUs/ContactUs';
 import Experience from '../Experience/Experience';
 import ProjectSS from '../ProjectSS/ProjectSS';
@@ -14,6 +15,7 @@ const Home = () => {
       <SocialLinks></SocialLinks>
       <Experience></Experience>
       <ProjectSS></ProjectSS>
+      <Blogs></Blogs>
       <ContactUs></ContactUs>
       
      

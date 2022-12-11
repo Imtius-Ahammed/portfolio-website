@@ -8,6 +8,7 @@ import ContactUs from "../Pages/Home/ContactUs/ContactUs";
 import Experience from "../Pages/Home/Experience/Experience";
 import Home from "../Pages/Home/Home/Home";
 import ProjectSS from "../Pages/Home/ProjectSS/ProjectSS";
+import ProjectDetails from "../Pages/ProjectDetails/ProjectDetails";
 
 export const router = createBrowserRouter([
   {
@@ -16,7 +17,8 @@ export const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('http://localhost:5000/projects')
       },
       {
         path:'/contact',
@@ -24,7 +26,14 @@ export const router = createBrowserRouter([
       },
       {
         path:'/projects',
-        element:<ProjectSS></ProjectSS>
+        element:<ProjectSS></ProjectSS>,
+        loader:()=>fetch('http://localhost:5000/projects')
+      },
+      {
+        path:'/projects/:id',
+        element:<ProjectDetails></ProjectDetails>,
+        loader: ({params})=>fetch(`http://localhost:5000/projects/${params.id}`)
+
       },
       {
         path:'/banner',
