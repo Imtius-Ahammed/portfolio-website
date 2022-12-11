@@ -72,20 +72,20 @@ const Experience = () => {
   ];
 
   return (
-    <div data-aos="fade-down-right"
-    data-aos-duration="2000" 
+    <div 
+    data-aos="fade-up" data-aos-duration="2000"
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="bg-gradient-to-b  from-gray-800 to-black w-full "
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+      <div className="max-w-screen-lg mx-auto  flex flex-col justify-center  text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="lg:text-4xl font-bold border-b-4 border-gray-500  inline">
            Skills & Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div data-aos="fade-down-left" data-aos-duration="2000"  className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full  grid grid-cols-2 sm:grid-cols-3  text-center py-8 px-3 gap-8 sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
